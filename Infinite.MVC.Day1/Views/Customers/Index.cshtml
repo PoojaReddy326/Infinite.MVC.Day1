@@ -1,0 +1,52 @@
+﻿
+@model List<Infinite.MVC.Day1.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h2>List of Customers</h2>
+<hr />
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Mobile No</th>
+    </tr>
+
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Name</td>
+            <td>@c.MobileNo</td>
+        </tr>
+
+    }
+</table>
+@*@{
+        ViewBag.Title = "Index Page";
+    }
+
+    <h2>Index</h2>
+    @{
+        int a = 100, b = 30;
+        int c = a + b;
+
+    }
+
+    <h2> Sum of A+B :@c  </h2>
+    <br />
+    <h3>
+        @ViewBag.MyName
+    </h3>*@
+
+
+
+
+@*@{
+        ViewBag.Title = "Index";
+    }*@
+
